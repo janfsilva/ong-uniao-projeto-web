@@ -1,26 +1,56 @@
-# Entrega 4 – Acessibilidade, Versionamento e Deploy
+# ONG União 🌿  
+**Experiência Prática 1 – Desenvolvimento Front-End para Web**
 
-## Objetivo
-Refinar o projeto com **acessibilidade**, boas práticas e preparo para **deploy** (publicação).
+Este projeto foi desenvolvido como parte da disciplina de **Desenvolvimento Front-End para Web**, com o objetivo de criar uma página web simples e funcional para uma ONG fictícia chamada ** ONG União **.  
+A proposta é aplicar os conhecimentos de **HTML5**, **semântica**, **acessibilidade** e **organização de conteúdo** em um contexto socialmente relevante.
 
-## Estrutura de Arquivos
-- `index.html`, `projetos.html`, `cadastro.html`
-- `css/style.css`
-- `js/script.js`
-- `imagens/`
+---
 
-## Tecnologias Utilizadas
-- HTML5 semântico, CSS3 responsivo, JavaScript básico
-- Acessibilidade (WCAG 2.1): skip-link, títulos claros, `alt` descritivo
-- Versionamento com Git/GitHub
+## 🎯 Objetivo do Projeto
 
-## Descrição do Desenvolvimento
-Foram aplicadas melhorias de acessibilidade:  
-- **Skip-link** para pular ao conteúdo principal;  
-- Título oculto (visually-hidden) no banner de cadastro;  
-- Textos alternativos (`alt`) descritivos em todas as imagens;  
-- Estrutura de títulos hierárquica.
+O objetivo principal é desenvolver uma **plataforma web básica** que ajude uma ONG a:
+- Apresentar suas informações institucionais;
+- Divulgar projetos e ações sociais;
+- Permitir o cadastro de voluntários e doadores;
+- Promover engajamento e transparência com a comunidade.
 
-## Observações
-Projeto pronto para publicação no **GitHub Pages** (Settings → Pages).  
-Recomendado validar no **W3C Validator** após publicar a versão final.
+---
+
+## 🧩 Estrutura do Projeto
+
+O site é formado por **três páginas principais**:
+
+| Página | Descrição |
+|---------|------------|
+| **index.html** | Página inicial, apresenta a ONG e sua missão. |
+| **projetos.html** | Mostra os projetos e campanhas em andamento. |
+| **cadastro.html** | Formulário para cadastro de voluntários e doadores. |
+
+As imagens usadas estão na pasta **/imagens**, e foram otimizadas nos formatos **JPG**, **PNG** e **SVG** para melhor desempenho.
+
+---
+
+## ⚙️ Recursos e Funcionalidades
+
+- Estrutura **HTML5 semântica**, com cabeçalhos, seções e rodapé bem definidos;  
+- **Formulário completo** com validação de campos e máscaras simples (CPF, telefone, CEP);  
+- **Imagens responsivas** com a tag `<picture>` e atributo `loading="lazy"`;  
+- **Design acessível**, com textos alternativos e rótulos para todos os inputs;  
+- **Código validado** pelo **W3C Validator**.
+
+---
+
+## 📱 Requisitos Atendidos
+
+- **Responsividade** (mobile-first);  
+- **Desempenho otimizado** (imagens leves e compressão eficiente);  
+- **Acessibilidade básica** (uso de `alt`, `label` e navegação por teclado);  
+- **Semântica e SEO simples** (meta descrição e títulos adequados).
+
+---
+
+## 🚀 Como visualizar o projeto
+
+1. Acesse o repositório no GitHub;
+2. https://janfsilva.github.io/ong-uniao-projeto-web/index.html 
+
