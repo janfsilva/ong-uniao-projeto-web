@@ -1,10 +1,59 @@
-# ONG União — Versão Final (GitHub Pages)
+# ONG União🌿  
+**Experiência Prática – Desenvolvimento Front-End para Web**
 
-Este repositório contém a versão final do projeto da **ONG União**, consolidando as quatro entregas (HTML, CSS, JavaScript e Acessibilidade).
+Este projeto foi desenvolvido como parte da disciplina de **Desenvolvimento Front-End para Web**, com o objetivo de criar uma página web simples e funcional para uma ONG fictícia chamada **ONG União**.  
+A proposta é aplicar os conhecimentos de **HTML5**, **semântica**, **acessibilidade** e **organização de conteúdo** em um contexto socialmente relevante.
 
-## Estrutura
-index.html, projetos.html, cadastro.html, css/style.css, js/script.js, pasta imagens/
+---
 
-## Publicação no GitHub Pages
-Settings → Pages → Deploy from a branch → Branch: main → Folder: /(root) → Save.
+## 🎯 Objetivo do Projeto
 
+O objetivo principal é desenvolver uma **plataforma web básica** que ajude uma ONG a:
+- Apresentar suas informações institucionais;
+- Divulgar projetos e ações sociais;
+- Permitir o cadastro de voluntários e doadores;
+- Promover engajamento e transparência com a comunidade.
+
+---
+
+## 🧩 Estrutura do Projeto
+
+O site é formado por **três páginas principais**:
+
+| Página | Descrição |
+|---------|------------|
+| **index.html** | Página inicial, apresenta a ONG e sua missão. |
+| **projetos.html** | Mostra os projetos e campanhas em andamento. |
+| **cadastro.html** | Formulário para cadastro de voluntários e doadores. |
+
+As imagens usadas estão na pasta **/imagens**, e foram otimizadas nos formatos **JPG**, **PNG** e **SVG** para melhor desempenho.
+
+---
+
+## ⚙️ Recursos e Funcionalidades
+
+- Estrutura **HTML5 semântica**, com cabeçalhos, seções e rodapé bem definidos;  
+- **Formulário completo** com validação de campos e máscaras simples (CPF, telefone, CEP);  
+- **Imagens responsivas** com a tag `<picture>` e atributo `loading="lazy"`;  
+- **Design acessível**, com textos alternativos e rótulos para todos os inputs;  
+- **Código validado** pelo **W3C Validator**.
+
+---
+
+## 📱 Requisitos Atendidos
+
+- **Responsividade** (mobile-first);  
+- **Desempenho otimizado** (imagens leves e compressão eficiente);  
+- **Acessibilidade básica** (uso de `alt`, `label` e navegação por teclado);  
+- **Semântica e SEO simples** (meta descrição e títulos adequados).
+
+---
+
+## 🚀 Como visualizar o projeto
+
+1. Acesse o repositório no GitHub;  
+2. Vá em **Settings → Pages**;  
+3. Em **Build and deployment**, selecione:  
+   - **Source:** Deploy from a branch  
+   - **Branch:** `main`  
+   - **Folder:** `/ (root)`  
