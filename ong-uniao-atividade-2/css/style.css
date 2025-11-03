@@ -1,0 +1,139 @@
+/* --- Configuração inicial --- */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f9fb;
+  color: #333;
+}
+
+/* --- Cabeçalho e título principal --- */
+header {
+  background-color: #0a4d68;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.8em;
+}
+
+/* --- Menu de navegação (em linha) --- */
+nav {
+  background-color: #0a4d68;
+  text-align: center;
+  padding: 10px 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #ffd700;
+}
+
+/* --- Conteúdo principal --- */
+main {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+/* --- Imagens responsivas --- */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 10px auto;
+  border-radius: 8px;
+}
+
+/* --- Banner da página de cadastro --- */
+.banner-cadastro img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+/* --- Formulário --- */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  padding: 10px 15px;
+}
+
+legend {
+  font-weight: bold;
+  color: #0a4d68;
+}
+
+label {
+  display: block;
+  margin-top: 8px;
+}
+
+input, select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+
+/* --- Botões --- */
+button {
+  background-color: #0a4d68;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 4px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0872a3;
+}
+
+/* --- Rodapé --- */
+footer {
+  background-color: #0a4d68;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+
+/* --- Responsividade simples --- */
+@media (max-width: 768px) {
+  nav a {
+    display: block;
+    margin: 8px 0;
+  }
+
+  main {
+    margin: 10px;
+    padding: 10px;
+  }
+
+  form {
+    width: 100%;
+  }
+}
+
+
+
