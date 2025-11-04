@@ -1,5 +1,5 @@
 # ONG União 🌿  
-**Experiência Prática 1 – Desenvolvimento Front-End para Web**
+**Experiência Prática – Desenvolvimento Front-End para Web**
 
 Este projeto foi desenvolvido como parte da disciplina de **Desenvolvimento Front-End para Web**, com o objetivo de criar uma página web simples e funcional para uma ONG fictícia chamada **ONG União**.  
 A proposta é aplicar os conhecimentos de **HTML5**, **semântica**, **acessibilidade** e **organização de conteúdo** em um contexto socialmente relevante.
