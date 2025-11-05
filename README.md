@@ -117,7 +117,7 @@ cd ong-uniao-projeto-web
 ---
 
 ## 👨‍💻 Autor
-**Desenvolvido por:** [Jan Silva](https://github.com/janfsilva)  
+**Desenvolvido por:** [Janailson F Silva](https://github.com/janfsilva)  
 💡 *Projeto realizado como parte da Experiência Prática — Desenvolvimento Front-End para Web.*
 
 📅 **Ano:** 2025  
