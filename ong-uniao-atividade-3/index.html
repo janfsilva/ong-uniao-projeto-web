@@ -3,86 +3,97 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Plataforma web fictícia de uma ONG para a EP1 — Fundamentos e Estruturação.">
-  <title>Início — ONG União</title>
+  <meta name="description" content="ONG União — projetos sociais, doações e voluntariado.">
+  <title>ONG União — Início</title>
   <link rel="stylesheet" href="css/style.css">
-
 </head>
 <body>
-  <!-- Acessibilidade: -->
+<button id="toggle-dark"><span id="theme-icon">🌙</span></button>
   <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
-  <header>
-    <h1>ONG União </h1>
-    <nav aria-label="Navegação principal">
-      <ul>
-        <li><a href="index.html">Início</a></li>
-        <li><a href="projetos.html">Projetos</a></li>
-        <li><a href="cadastro.html">Cadastro</a></li>
-      </ul>
-    </nav>
+
+  <header class="site-header">
+    <div class="container header-wrap">
+      <h1 class="logo" aria-label="ONG União">ONG União</h1>
+
+      <button id="btn-menu" class="hamburger" aria-label="Abrir menu" aria-controls="menu" aria-expanded="false">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+
+      <nav id="menu" class="menu" aria-label="Navegação principal">
+        <ul>
+          <li><a href="index.html" aria-current="page">Início</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="cadastro.html">Cadastro</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main id="conteudo">
-    <section>
-      <h2>Quem Somos</h2>
-     <p>
-    A <strong>ONG união</strong> é uma organização sem fins lucrativos fundada com o propósito de
-    transformar realidades por meio da solidariedade e da união comunitária. Nosso trabalho é voltado
-    para o fortalecimento social de famílias em situação de vulnerabilidade, oferecendo oportunidades
-    de aprendizado, apoio e desenvolvimento humano.
-  </p>
+  <main id="conteudo" class="container">
+    <section class="hero">
+      <picture>
+        <source type="image/svg+xml" srcset="imagens/uniao_ong.svg">
+        <img src="imagens/uniao_ong.jpg" alt="Ilustração da ONG União representando união e apoio comunitário." width="1200" loading="lazy">
+      </picture>
+      <div class="hero-text">
+        <h2>Unindo pessoas para transformar realidades</h2>
+        <p>Promovemos educação, saúde e cidadania por meio de ações coletivas e solidárias.</p>
+        <a class="btn btn--primario" href="projetos.html">Conheça os projetos</a>
+        <span class="badge badge--solidariedade">#solidariedade</span>
+        <span class="badge badge--educacao">#educação</span>
+        <span class="badge badge--saude">#saúde</span>
+      </div>
+    </section>
 
-  <p>
-    Atuamos desde <strong>2018</strong> com projetos nas áreas de <em>educação, saúde, capacitação profissional</em> e 
-    <em>assistência social</em>, sempre com foco na valorização da dignidade e no respeito às diferenças.
-    Nossa equipe é formada por voluntários e parceiros comprometidos com o bem comum.
-  </p>
-
-  <p>
-    Acreditamos que pequenas ações podem gerar grandes mudanças. Por isso, trabalhamos para construir
-    uma rede de solidariedade que aproxima pessoas, promove o voluntariado e multiplica boas atitudes.
-  </p>
-
-      <figure>
-       <picture>
-  <source type="image/svg+xml" srcset="imagens/uniao_ong.svg">
-
-  <!-- Um arquivo só: sem sizes, com 1x -->
-  <source type="image/png" srcset="imagens/uniao_ong.png 1x">
-
-  <img src="imagens/uniao_ong.jpg"
-       alt="Grupo unido representando a solidariedade da ONG." loading="lazy">
-</picture>
-
+    <section aria-labelledby="qs-titulo" class="grid-2">
+      <div>
+        <h2 id="qs-titulo">Quem somos</h2>
+        <p>A <strong>ONG União</strong> é uma organização sem fins lucrativos que atua com foco em inclusão, bem-estar e desenvolvimento comunitário. Trabalhamos em parceria com escolas, líderes locais e voluntários.</p>
+        <p>Nossa missão é conectar quem quer ajudar com quem mais precisa, criando uma rede de apoio contínua — doações, oficinas, mutirões e atividades culturais.</p>
+        <a class="btn btn--secundario" href="cadastro.html">Quero ser voluntário(a)</a>
+      </div>
+      <figure class="media">
+        <picture>
+          <source type="image/svg+xml" srcset="imagens/comunidade_apoio.svg">
+          <source type="image/png" srcset="imagens/comunidade_apoio-800.png 800w, imagens/comunidade_apoio-1200.png 1200w, imagens/comunidade_apoio-1600.png 1600w" sizes="(max-width: 768px) 100vw, 540px">
+          <img src="imagens/comunidade_apoio-1200.jpg" alt="Pessoas colaborando em atividades comunitárias." loading="lazy">
+        </picture>
+        <figcaption class="visually-hidden">Ações da comunidade apoiadas pela ONG.</figcaption>
       </figure>
-       <h3>Nossa Missão</h3>
-  <p>
-    Promover a inclusão social e o desenvolvimento humano por meio de ações solidárias e projetos
-    educativos que gerem impacto positivo e duradouro nas comunidades atendidas.
-  </p>
+    </section>
 
-  <h3>Visão</h3>
-  <p>
-    Ser reconhecida como uma organização que inspira confiança, solidariedade e mudança social,
-    tornando-se referência em projetos comunitários e voluntariado.
-  </p>
-
-  <h3>Valores</h3>
-  <ul>
-    <li>Respeito e empatia;</li>
-    <li>Solidariedade e cooperação;</li>
-    <li>Transparência e responsabilidade;</li>
-    <li>Comprometimento com a comunidade;</li>
-    <li>Valorização do ser humano.</li>
-  </ul>
-
+    <section class="cards" aria-labelledby="destaques">
+      <h2 id="destaques">Destaques</h2>
+      <div class="card-grid">
+        <article class="card">
+          <h3>Rede de Doações</h3>
+          <p>Arrecadação e distribuição de itens essenciais para famílias em vulnerabilidade.</p>
+          <a class="btn btn--linha" href="projetos.html#rede">Ver mais</a>
+          <span class="tag">doações</span>
+        </article>
+        <article class="card">
+          <h3>Comunidade em Ação</h3>
+          <p>Mutirões, oficinas e ações de cidadania com participação dos moradores.</p>
+          <a class="btn btn--linha" href="projetos.html#comunidade">Ver mais</a>
+          <span class="tag">cidadania</span>
+        </article>
+        <article class="card">
+          <h3>Educação para Todos</h3>
+          <p>Reforço escolar, leitura e informática básica para jovens e adultos.</p>
+          <a class="btn btn--linha" href="projetos.html#educacao">Ver mais</a>
+          <span class="tag">educação</span>
+        </article>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <address>Contato: <a href="mailto:contato@onguniao.org">contato@onguniao.org</a> — (11) 99999-9999</address>
-    <p>© 2025 ONG União — Todos os direitos reservados.</p>
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 ONG União - Todos os direitos reservados.</p>
+       <address>Contato: <a href="mailto:contato@onguniao.org">contato@onguniao.org</a> — (11) 96699-4499</address>
+    </div>
   </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
-
