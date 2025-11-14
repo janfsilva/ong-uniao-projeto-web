@@ -3,85 +3,123 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Cadastro de voluntários e doadores.">
+  <meta name="description" content="Cadastro de voluntários e doadores — ONG União">
   <title>Cadastro — ONG União</title>
   <link rel="stylesheet" href="css/style.css">
-
 </head>
 <body>
-   <!-- Acessibilidade: -->
+<button id="toggle-dark"><span id="theme-icon">🌙</span></button>
   <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
-  <header>
-    <h1>Cadastro</h1>
-    <nav aria-label="Navegação principal">
-      <ul>
-        <li><a href="index.html">Início</a></li>
-        <li><a href="projetos.html">Projetos</a></li>
-        <li><a href="cadastro.html" aria-current="page">Cadastro</a></li>
-      </ul>
-    </nav>
+
+  <header class="site-header">
+    <div class="container header-wrap">
+      <h1 class="logo">Cadastro</h1>
+      <button id="btn-menu" class="hamburger" aria-label="Abrir menu" aria-controls="menu" aria-expanded="false">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+      <nav id="menu" class="menu" aria-label="Navegação principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="cadastro.html" aria-current="page">Cadastro</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main id="conteudo">
-   <section class="banner-cadastro">
-     <h2 class="visually-hidden"> página de cadastro</h2>
-  <picture>
-    <source type="image/svg+xml" srcset="imagens/banner_cadastro.svg">
-    <source type="image/png" srcset="imagens/banner_cadastro.png">
-    <img src="imagens/banner_cadastro.jpg"
-         alt="Pessoas se cadastrando em uma ONG, usando notebook e celular"
-         loading="lazy">
-  </picture>
-</section>
+  <main id="conteudo" class="container">
+    <section class="banner-cadastro">
+      <h2 class="visually-hidden">Banner da página de cadastro</h2>
+      <picture>
+        <source type="image/svg+xml" srcset="imagens/banner_cadastro.svg">
+        <img src="imagens/banner_cadastro_fino.jpg" alt="Ilustração de inscrição de voluntariado." loading="lazy">
+      </picture>
+    </section>
 
+    <section aria-labelledby="cad-titulo">
+      <h2 id="cad-titulo">Formulário de Cadastro</h2>
 
-    <section>
-      <h2>Cadastro de Voluntário / Doador</h2>
-
-      <form id="form-cadastro" action="#" method="post">
+      <form id="form-cadastro" action="#" method="post" novalidate>
         <fieldset>
-          <legend>Informações Pessoais</legend>
-          <label for="nome">Nome completo *</label>
-          <input id="nome" name="nome" type="text" required>
-          <label for="email">E-mail *</label>
-          <input id="email" name="email" type="email" required>
-          <label for="cpf">CPF *</label>
-          <input id="cpf" name="cpf" type="text" inputmode="numeric" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="000.000.000-00" required>
-          <label for="telefone">Telefone *</label>
-          <input id="telefone" name="telefone" type="tel" pattern="\(?\d{2}\)?\s?\d{4,5}-\d{4}" placeholder="(11) 90000-0000" required>
-          <label for="nascimento">Data de nascimento *</label>
+          <legend>Dados pessoais</legend>
+
+          <label for="nome">Nome completo</label>
+          <input id="nome" name="nome" type="text" required minlength="3" autocomplete="name">
+
+          <label for="email">E-mail</label>
+          <input id="email" name="email" type="email" required autocomplete="email">
+
+          <label for="cpf">CPF</label>
+          <input id="cpf" name="cpf" type="text" inputmode="numeric" required pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="000.000.000-00">
+
+          <label for="telefone">Telefone</label>
+          <input id="telefone" name="telefone" type="tel" inputmode="tel" required pattern="\(\d{2}\) \d{4,5}-\d{4}" placeholder="(00) 00000-0000">
+
+          <label for="nascimento">Data de nascimento</label>
           <input id="nascimento" name="nascimento" type="date" required>
-          <label for="endereco">Endereço *</label>
-          <input id="endereco" name="endereco" type="text" required>
-          <label for="cidade">Cidade *</label>
-          <input id="cidade" name="cidade" type="text" required>
-          <label for="estado">Estado (UF) *</label>
-          <input id="estado" name="estado" type="text" minlength="2" maxlength="2" placeholder="SP" required>
-          <label for="cep">CEP *</label>
-          <input id="cep" name="cep" type="text" inputmode="numeric" pattern="\d{5}-\d{3}" placeholder="00000-000" required>
+        </fieldset>
+
+        <fieldset>
+          <legend>Endereço</legend>
+
+          <label for="endereco">Endereço</label>
+          <input id="endereco" name="endereco" type="text" required autocomplete="address-line1">
+
+          <label for="cep">CEP</label>
+          <input id="cep" name="cep" type="text" inputmode="numeric" required pattern="\d{5}-\d{3}" placeholder="00000-000">
+
+          <label for="cidade">Cidade</label>
+          <input id="cidade" name="cidade" type="text" required autocomplete="address-level2">
+
+          <label for="estado">Estado</label>
+          <select id="estado" name="estado" required>
+            <option value="">Selecione…</option>
+            <option>AC</option><option>AL</option><option>AM</option><option>AP</option>
+            <option>BA</option><option>CE</option><option>DF</option><option>ES</option>
+            <option>GO</option><option>MA</option><option>MG</option><option>MS</option>
+            <option>MT</option><option>PA</option><option>PB</option><option>PE</option>
+            <option>PI</option><option>PR</option><option>RJ</option><option>RN</option>
+            <option>RO</option><option>RR</option><option>RS</option><option>SC</option>
+            <option>SE</option><option>SP</option><option>TO</option>
+          </select>
         </fieldset>
 
         <fieldset>
           <legend>Preferências</legend>
-          <label><input type="radio" name="tipo" value="voluntario" required> Voluntariado</label>
-          <label><input type="radio" name="tipo" value="doador"> Doações</label>
-          <p>Áreas de interesse:</p>
-          <label><input type="checkbox" name="area" value="educacao"> Educação</label>
-          <label><input type="checkbox" name="area" value="saude"> Saúde</label>
-          <label><input type="checkbox" name="area" value="comunidade"> Comunidade</label>
+          <label for="area">Área de interesse</label>
+          <select id="area" name="area" required>
+            <option value="">Selecione…</option>
+            <option>Doações</option>
+            <option>Comunidade</option>
+            <option>Educação</option>
+          </select>
+
+          <label for="mensagem">Mensagem (opcional)</label>
+          <textarea id="mensagem" name="mensagem" rows="4" maxlength="400"></textarea>
+
+          <label class="chk">
+            <input id="lgpd" type="checkbox" required> Declaro que li e concordo com a Política de Privacidade.
+          </label>
         </fieldset>
 
-        <button type="submit">Enviar cadastro</button>
-        <button type="reset">Limpar</button>
+        <div class="form-actions">
+          <button type="submit" class="btn btn--primario">Enviar cadastro</button>
+          <button type="reset" class="btn btn--linha">Limpar</button>
+        </div>
+
+        <p class="dica">Dica: os campos CPF, CEP e telefone aceitam os formatos indicados no placeholder.</p>
+        <div id="mensagens" class="callout" aria-live="polite" hidden></div>
       </form>
     </section>
   </main>
 
-  <footer>
-    <p> © 2025 ONG União — Todos os direitos reservados.</p>
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 ONG União - Todos os direitos reservados.</p>
+       <address>Contato: <a href="mailto:contato@onguniao.org">contato@onguniao.org</a> — (11) 96699-4499</address>
+    </div>
   </footer>
-  <!-- Script JavaScript -->
+
   <script src="js/script.js"></script>
 </body>
 </html>
-
