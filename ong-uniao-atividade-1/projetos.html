@@ -3,133 +3,99 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Projetos da ONG União.">
+  <meta name="description" content="Projetos da ONG União">
   <title>Projetos — ONG União</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-   <!-- Acessibilidade: -->
+<button id="toggle-dark"><span id="theme-icon">🌙</span></button>
   <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
-  <header>
-    <h1>Projetos</h1>
-    <nav aria-label="Navegação principal">
-      <ul>
-        <li><a href="index.html">Início</a></li>
-        <li><a href="projetos.html" aria-current="page">Projetos</a></li>
-        <li><a href="cadastro.html">Cadastro</a></li>
-      </ul>
-    </nav>
+
+  <header class="site-header">
+    <div class="container header-wrap">
+      <h1 class="logo">Projetos</h1>
+      <button id="btn-menu" class="hamburger" aria-label="Abrir menu" aria-controls="menu" aria-expanded="false">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+      <nav id="menu" class="menu" aria-label="Navegação principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="projetos.html" aria-current="page">Projetos</a></li>
+          <li><a href="cadastro.html">Cadastro</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main id="conteudo">
-    
-     <!-- introdução -->
-    <section id="introducao">
-      <h2>Nossos Projetos</h2>
-      <p>
-        A <strong>ONG União</strong> atua em diferentes áreas sociais com o objetivo de promover o
-        desenvolvimento humano, a solidariedade e o bem-estar de comunidades em situação de vulnerabilidade.
-        Nossos projetos são construídos com base na colaboração, no respeito e na empatia.
-      </p>
-      <p>
-        Trabalhamos para oferecer oportunidades reais de mudança, aproximando pessoas que desejam
-        ajudar e aquelas que precisam de apoio. A seguir, você conhece algumas das nossas principais iniciativas.
-      </p>
+  <main id="conteudo" class="container">
+    <section>
+      <h2>Projetos em andamento</h2>
+      <p>Conheça algumas das iniciativas que mobilizam voluntários e doadores em nossa rede.</p>
     </section>
 
-    <!-- Projeto 1 -->
-    <section>
-      <article>
-        <h3>Rede de Doações</h3>
-        <p>
-          O projeto <strong>Rede de Doações</strong> tem como principal objetivo arrecadar e distribuir
-          alimentos, roupas e materiais de higiene para famílias em situação de vulnerabilidade social.
-          Com o apoio de voluntários e parceiros locais, realizamos campanhas mensais que beneficiam
-          dezenas de comunidades.
-        </p>
-        <p>
-          Além das doações, promovemos palestras sobre consumo consciente e reaproveitamento de materiais,
-          incentivando práticas sustentáveis e solidárias.
-        </p>
-
-        <figure>
+    <section class="card-grid projetos-grid">
+      <article class="card" id="rede">
+        <figure class="media">
           <picture>
             <source type="image/svg+xml" srcset="imagens/doacoes_acao.svg">
-            <source type="image/png"
-                    srcset="imagens/doacoes_acao-800.png 800w, imagens/doacoes_acao-1200.png 1200w, imagens/doacoes_acao-1600.png 1600w"
-                    sizes="(max-width: 768px) 100vw, 1200px">
-            <img src="imagens/doacoes_acao-1200.jpg"
-                 alt="Voluntários organizando e distribuindo doações de alimentos e roupas." loading="lazy">
+            <source type="image/png" srcset="imagens/doacoes_acao-800.png 800w, imagens/doacoes_acao-1200.png 1200w, imagens/doacoes_acao-1600.png 1600w" sizes="(max-width: 768px) 100vw, 540px">
+            <img src="imagens/doacoes_acao-1200.jpg" alt="Voluntários organizando doações em caixas." loading="lazy">
           </picture>
-          <figcaption>Rede de Doações — solidariedade que transforma vidas.</figcaption>
         </figure>
+        <h3>Rede de Doações</h3>
+        <p>Arrecada, seleciona e entrega cestas básicas, roupas e itens de higiene a famílias em situação de vulnerabilidade.</p>
+        <div class="tags">
+          <span class="tag">doações</span>
+          <span class="tag">logística</span>
+        </div>
+        <button class="btn btn--primario" data-cta="quero-doar">Quero Doar</button>
       </article>
-    </section>
 
-    <!-- Projeto 2 -->
-    <section>
-      <article>
-        <h3>Comunidade em Ação</h3>
-        <p>
-          O projeto <strong>Comunidade em Ação</strong> promove mutirões, oficinas e atividades sociais
-          em parceria com moradores locais, escolas e lideranças comunitárias. Nosso objetivo é fortalecer
-          os vínculos sociais e melhorar a qualidade de vida nas regiões atendidas.
-        </p>
-        <p>
-          Entre as ações realizadas estão a revitalização de praças, limpeza de espaços públicos,
-          plantio de árvores e oficinas educativas sobre meio ambiente, cidadania e saúde.
-        </p>
-
-        <figure>
+      <article class="card" id="comunidade">
+        <figure class="media">
           <picture>
             <source type="image/svg+xml" srcset="imagens/comunidade_apoio.svg">
-            <source type="image/png"
-                    srcset="imagens/comunidade_apoio-800.png 800w, imagens/comunidade_apoio-1200.png 1200w, imagens/comunidade_apoio-1600.png 1600w"
-                    sizes="(max-width: 768px) 100vw, 1200px">
-            <img src="imagens/comunidade_apoio-1200.jpg"
-                 alt="Voluntários colaborando em atividades comunitárias e projetos sociais." loading="lazy">
+            <source type="image/png" srcset="imagens/comunidade_apoio-800.png 800w, imagens/comunidade_apoio-1200.png 1200w, imagens/comunidade_apoio-1600.png 1600w" sizes="(max-width: 768px) 100vw, 540px">
+            <img src="imagens/comunidade_apoio-1200.jpg" alt="Voluntários em mutirão comunitário." loading="lazy">
           </picture>
-          <figcaption>Comunidade em Ação — cidadania e transformação social.</figcaption>
         </figure>
+        <h3>Comunidade em Ação</h3>
+        <p>Mutirões de limpeza, revitalização de espaços públicos e oficinas com foco em cidadania e meio ambiente.</p>
+        <div class="tags">
+          <span class="tag">cidadania</span>
+          <span class="tag">meio ambiente</span>
+        </div>
+        <button class="btn btn--primario" data-cta="quero-participar">Quero Participar</button>
+      </article>
+
+      <article class="card" id="educacao">
+         <figure class="media">
+          <picture>
+            <source type="image/svg+xml" srcset="imagens/comunidade_apoio.svg">
+            <source type="image/png" srcset="imagens/comunidade_apoio-800.png 800w, imagens/comunidade_apoio-1200.png 1200w, imagens/comunidade_apoio-1600.png 1600w" sizes="(max-width: 768px) 100vw, 540px">
+            <img src="imagens/comunidade_apoio-1200.jpg" alt="Voluntários em mutirão comunitário." loading="lazy">
+          </picture>
+        </figure>
+        <h3>Educação para Todos</h3>
+        <p>Reforço escolar, leitura e informática básica com apoio de professores e estudantes voluntários.</p>
+        <div class="tags">
+          <span class="tag">educação</span>
+          <span class="tag">biblioteca</span>
+        </div>
+        <button class="btn btn--primario" data-cta="quero-ensinar">Quero Ensinar</button>
       </article>
     </section>
 
-    <!--projeto 3 -->
-    <section>
-      <article>
-        <h3>Educação para o Futuro</h3>
-        <p>
-          Acreditamos que a educação é o caminho mais eficaz para construir um futuro melhor.
-          O projeto <strong>Educação para o Futuro</strong> oferece oficinas de reforço escolar,
-          leitura, informática e desenvolvimento pessoal para crianças e adolescentes.
-        </p>
-        <p>
-          As aulas são conduzidas por professores e voluntários que dedicam seu tempo e conhecimento
-          para fortalecer o aprendizado e despertar o interesse pelo estudo.
-        </p>
-        <p>
-          Com o apoio da comunidade, já conseguimos implantar uma sala de leitura e um laboratório
-          de informática, beneficiando mais de 150 jovens da região.
-        </p>
-      </article>
-    </section>
-
-    <!-- Como ajudar -->
-    <section id="como-ajudar">
-      <h3>Como Você Pode Ajudar</h3>
-      <p>
-        Você também pode fazer parte dessa corrente do bem! Seja como voluntário, doador ou parceiro institucional,
-        toda ajuda é bem-vinda e faz a diferença na vida de muitas pessoas.
-      </p>
-      <p>
-        Para mais informações, acesse nossa página de <a href="cadastro.html">Cadastro</a> e inscreva-se como voluntário
-        ou entre em contato com a equipe da <strong>ONG União</strong>.
-      </p>
-    </section>
-
+    <section class="callout" aria-live="polite" id="msg-projetos" hidden></section>
   </main>
 
-  <footer>
+  <footer class="site-footer">
+    <div class="container">
+       <address>Contato: <a href="mailto:contato@onguniao.org">contato@onguniao.org</a> — (11) 96699-4499</address>
     <p>© 2025 ONG União — Todos os direitos reservados.</p>
+    </div>
   </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
